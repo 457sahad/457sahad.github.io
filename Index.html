@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammed Sahad MP – UI/UX Developer & Islamic Scholar</title>
+  <style>
+    /* Reset */
+    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f6;
+      color: #2c2c2c;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(120deg, #f3efe9, #fff);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #e0ddd8;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 0.3rem;
+    }
+
+    header h1::after {
+      content: ' ﷽';
+      font-family: serif;
+      font-size: 1.2rem;
+      display: block;
+      margin-top: 0.3rem;
+      color: #888;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: #fff;
+      padding: 1rem;
+      text-align: center;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      height: 2px;
+      width: 0;
+      background: #444;
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #ddd;
+      padding-left: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #f2f2ed;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      background: #1f1f1f;
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #444;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mohammed Sahad MP</h1>
+    <p>UI/UX Developer & Islamic Scholar — blending technology with timeless wisdom</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="#islamic">Islamic Thought</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>I’m a passionate UI/UX designer who believes in creating interfaces that are intuitive, meaningful, and accessible. My design philosophy is deeply rooted in simplicity, clarity, and harmony — inspired by both modern design systems and classical Islamic art and philosophy.</p>
+      <p>I also study and teach Islamic sciences, exploring the intersections of spirituality, ethics, and modern life. I believe that faith and design are not separate — they both shape how we experience the world.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">UI/UX Projects</h2>
+    <div class="card">
+      <h3>Minimal Prayer Tracker App</h3>
+      <p>A modern, distraction-free mobile UI to help users track their prayers, with elegant typography and dark/light themes.</p>
+    </div>
+    <div class="card">
+      <h3>Clean Dashboard System</h3>
+      <p>Built a responsive admin UI with user-centered navigation flow, used by over 1,000+ users in a business context.</p>
+    </div>
+  </section>
+
+  <section id="islamic">
+    <h2 class="section-title">Islamic Reflections</h2>
+    <div class="card">
+      <h3>Ramadan UI Series</h3>
+      <p>Designed a 30-day UI post series during Ramadan — each slide featured a verse, reflection, and calming visual palette.</p>
+    </div>
+    <div class="card">
+      <h3>Lectures & Classes</h3>
+      <p>I occasionally conduct online halaqahs and classes on topics like "Design in Islamic History", "Tazkiyah & Tech", and more.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="card">
+      <p>I'd love to connect — whether it's for a UI/UX collaboration, an Islamic discussion, or just to say Salaam ✨</p>
+      <a class="btn" href="mailto:mohammedsahadmp@gmail.com">Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Mohammed Sahad MP. Built with ❤️ & sincerity.
+  </footer>
+
+  <script>
+    // Smooth scroll enhancement (already handled with CSS, here for future interactions)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
